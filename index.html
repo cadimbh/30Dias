@@ -1,12 +1,16 @@
 <!doctype html>
-<html lang="pt-BR">
-<head>
+<html lang="pt-BR"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="30 almoços sem repetir + bônus especial com 15 jantares em 15 minutos por R$ 24,90.">
+  <meta name="description" content="30 almoços sem repetir + bônus especial com 15 jantares em 15 minutos por R$ 19,90.">
   <meta name="theme-color" content="#e3261b">
   <title>30 Dias Sem Repetir o Almoço + Bônus Especial</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="preload" href="assets/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="assets/anton-latin.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="assets/lilita-one-latin.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="assets/cardapio-30-dias-480.webp" as="image" type="image/webp" media="(max-width:620px)" fetchpriority="high">
+  <link rel="preload" href="assets/cardapio-30-dias.webp" as="image" type="image/webp" media="(min-width:621px)" fetchpriority="high">
+  <link rel="stylesheet" href="style.css?v=2">
 
   <style>
     .floating-buy-cta{
@@ -17,7 +21,7 @@
       color:#111;text-decoration:none;text-transform:uppercase;
       font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
       box-shadow:0 7px 0 #111,0 16px 35px rgba(0,0,0,.28);
-      transition:transform .2s ease,box-shadow .2s ease;
+      transition:transform .2s ease;
     }
     .floating-buy-cta:hover{transform:translateY(-2px);box-shadow:0 9px 0 #111,0 18px 38px rgba(0,0,0,.3)}
     .floating-buy-cta-icon{font-size:24px;line-height:1}
@@ -36,30 +40,32 @@
       .floating-buy-cta-copy small{font-size:10px}
       .floating-buy-cta-copy strong{font-size:14px}
     }
-    @media (prefers-reduced-motion:reduce){
-      .floating-buy-cta{transition:none}
-    }
+    @media (prefers-reduced-motion:reduce){.floating-buy-cta{transition:none}}
   </style>
-
 </head>
 <body>
-  <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1559883709101573');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1559883709101573&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+  <!-- PageView leve: registra a visita sem bloquear a renderização. -->
+  <img width="1" height="1" alt="" aria-hidden="true" style="display:none" fetchpriority="low" src="https://www.facebook.com/tr?id=1559883709101573&amp;ev=PageView&amp;noscript=1">
+  <!-- O SDK completo só é baixado após interação ou permanência na página. -->
+  <script src="https://connect.facebook.net/signals/config/1559883709101573?v=2.9.384&amp;r=stable&amp;domain=127.0.0.1&amp;hme=3517d0f210c4a0b527ceb45c3c41c05158fe7c1ff53c0e2e1c36eeea4709b2af&amp;ex_m=113%2C218%2C164%2C25%2C78%2C79%2C156%2C74%2C73%2C11%2C174%2C98%2C19%2C148%2C136%2C43%2C81%2C86%2C144%2C169%2C176%2C29%2C17%2C30%2C31%2C32%2C34%2C52%2C157%2C83%2C121%2C21%2C23%2C48%2C44%2C46%2C45%2C91%2C100%2C104%2C119%2C155%2C158%2C50%2C120%2C27%2C24%2C128%2C75%2C40%2C160%2C159%2C161%2C152%2C150%2C28%2C39%2C63%2C118%2C171%2C76%2C20%2C123%2C89%2C72%2C22%2C93%2C94%2C125%2C92%2C146%2C145%2C149%2C105%2C170%2C173%2C38%2C53%2C122%2C51%2C8%2C4%2C5%2C7%2C6%2C3%2C99%2C110%2C177%2C185%2C232%2C80%2C245%2C244%2C243%2C14%2C26%2C37%2C59%2C112%2C65%2C10%2C69%2C106%2C107%2C108%2C114%2C139%2C35%2C33%2C141%2C142%2C143%2C138%2C137%2C165%2C82%2C168%2C166%2C167%2C54%2C64%2C132%2C18%2C172%2C49%2C291%2C292%2C290%2C305%2C327%2C225%2C214%2C66%2C215%2C213%2C330%2C321%2C56%2C226%2C116%2C140%2C88%2C130%2C58%2C129%2C135%2C134%2C62%2C70%2C68%2C162%2C84%2C85%2C124%2C41%2C36%2C57%2C60%2C109%2C175%2C1%2C133%2C16%2C131%2C12%2C2%2C61%2C101%2C15%2C71%2C67%2C127%2C97%2C96%2C178%2C179%2C102%2C103%2C9%2C111%2C55%2C153%2C95%2C87%2C77%2C126%2C115%2C47%2C154%2C0%2C90%2C147%2C151%2C163%2C42%2C117%2C13%2C180" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script>
+  (function(w,d){
+    var loaded=false;
+    function loadMeta(){
+      if(loaded)return;loaded=true;
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+      (w,d,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init','1559883709101573');
+    }
+    ['pointerdown','touchstart','keydown','scroll'].forEach(function(eventName){
+      w.addEventListener(eventName,loadMeta,{once:true,passive:true});
+    });
+    w.setTimeout(loadMeta,15000);
+  })(window,document);
+  </script>
+
 <main>
   <div class="topbar"><span>✦</span> OFERTA ESPECIAL: CARDÁPIO + BÔNUS POR R$ 19,90 <span>✦</span></div>
 
@@ -76,8 +82,8 @@ src="https://www.facebook.com/tr?id=1559883709101573&ev=PageView&noscript=1"
       </div>
       <div class="product-stack" aria-label="Cardápio principal e bônus especial">
         <div class="burst"></div>
-        <figure class="product main-product"><img src="assets/cardapio-30-dias.jpg" alt="Capa do Cardápio 30 Dias Sem Repetir o Almoço"></figure>
-        <figure class="product bonus-product"><span class="gift-label">BÔNUS INCLUÍDO</span><img src="assets/bonus-15-jantares.jpg" alt="Capa do bônus 15 Jantares de 15 Minutos"></figure>
+        <figure class="product main-product"><img src="assets/cardapio-30-dias.webp" srcset="assets/cardapio-30-dias-480.webp 480w, assets/cardapio-30-dias.webp 827w" sizes="(max-width:620px) 250px, 355px" width="827" height="1170" fetchpriority="high" decoding="async" alt="Capa do Cardápio 30 Dias Sem Repetir o Almoço"></figure>
+        <figure class="product bonus-product"><span class="gift-label">BÔNUS INCLUÍDO</span><img src="assets/bonus-15-jantares.webp" srcset="assets/bonus-15-jantares-480.webp 480w, assets/bonus-15-jantares.webp 849w" sizes="(max-width:620px) 175px, 260px" width="849" height="1200" decoding="async" alt="Capa do bônus 15 Jantares de 15 Minutos"></figure>
         <div class="today-sticker"><b>HOJE</b><span>por apenas<br>R$ 19,90</span></div>
       </div>
     </div>
@@ -100,7 +106,7 @@ src="https://www.facebook.com/tr?id=1559883709101573&ev=PageView&noscript=1"
 
   <section class="bonus-section">
     <div class="shell bonus-grid">
-      <div class="bonus-art"><div class="bonus-rays"></div><img src="assets/bonus-15-jantares.jpg" alt="Bônus especial 15 Jantares de 15 Minutos"><div class="free-tag"><span>BÔNUS</span><strong>INCLUÍDO</strong><b>NESTA OFERTA</b></div></div>
+      <div class="bonus-art"><div class="bonus-rays"></div><img src="assets/bonus-15-jantares.webp" srcset="assets/bonus-15-jantares-480.webp 480w, assets/bonus-15-jantares.webp 849w" sizes="(max-width:620px) 285px, 390px" width="849" height="1200" loading="lazy" decoding="async" fetchpriority="low" alt="Bônus especial 15 Jantares de 15 Minutos"><div class="free-tag"><span>BÔNUS</span><strong>INCLUÍDO</strong><b>NESTA OFERTA</b></div></div>
       <div class="bonus-copy"><div class="section-kicker">BÔNUS ESPECIAL INCLUÍDO</div><h2>15 jantares<br><em>em 15 minutos.</em></h2><p class="bonus-lead">Quando o dia terminar corrido, você não precisa recorrer ao improviso. Este bônus foi criado para completar sua rotina com ideias rápidas, práticas e diferentes do cardápio de almoço.</p><div class="bonus-benefits"><div><span>⏱</span><b>Pronto em 15 minutos</b></div><div><span>♨</span><b>Simples e prático</b></div><div><span>$</span><b>Econômico</b></div><div><span>♥</span><b>Cheio de sabor</b></div></div><p class="exclusive-note">Disponível exclusivamente junto com esta oferta.</p></div>
     </div>
   </section>
@@ -108,16 +114,16 @@ src="https://www.facebook.com/tr?id=1559883709101573&ev=PageView&noscript=1"
   <section class="bundle section shell">
     <div class="section-kicker">VOCÊ LEVA O COMBO COMPLETO</div><h2>Do almoço ao jantar,<br><em>sua rotina resolvida.</em></h2>
     <div class="bundle-card">
-      <div class="bundle-item"><img src="assets/cardapio-30-dias.jpg" alt="Cardápio principal"><div><small>PRODUTO PRINCIPAL</small><h3>30 Dias Sem Repetir o Almoço</h3><p>Cardápio ilustrado + organização + listas de compras.</p><strong>Oferta principal</strong></div></div>
+      <div class="bundle-item"><img src="assets/cardapio-30-dias-480.webp" width="480" height="679" loading="lazy" decoding="async" alt="Cardápio principal"><div><small>PRODUTO PRINCIPAL</small><h3>30 Dias Sem Repetir o Almoço</h3><p>Cardápio ilustrado + organização + listas de compras.</p><strong>Oferta principal</strong></div></div>
       <div class="plus">+</div>
-      <div class="bundle-item bonus"><img src="assets/bonus-15-jantares.jpg" alt="Bônus de jantares"><div><small>BÔNUS ESPECIAL</small><h3>15 Jantares em 15 Minutos</h3><p>Mais praticidade para fechar o dia sem complicação.</p><strong>Incluído nesta oferta</strong></div></div>
+      <div class="bundle-item bonus"><img src="assets/bonus-15-jantares-480.webp" width="480" height="678" loading="lazy" decoding="async" alt="Bônus de jantares"><div><small>BÔNUS ESPECIAL</small><h3>15 Jantares em 15 Minutos</h3><p>Mais praticidade para fechar o dia sem complicação.</p><strong>Incluído nesta oferta</strong></div></div>
       <div class="bundle-total"><span>DE <s>R$ 49,90</s></span><small>HOJE POR APENAS</small><b>R$ 19,90</b><p>pagamento único</p><a class="cta" href="https://pay.kiwify.com.br/rlN2zSh" target="" rel="noreferrer">SIM, QUERO O COMBO COMPLETO <span>→</span></a></div>
     </div>
   </section>
 
   <section class="protected"><div class="shell"><div class="section-kicker light">SEM SPOILERS</div><h2>Você conhece os benefícios.<br><em>O conteúdo continua exclusivo.</em></h2><div class="feature-grid"><div><b>01</b><span><strong>Organização diária</strong>Menos decisões e mais clareza.</span></div><div><b>02</b><span><strong>Consulta rápida</strong>Material visual para usar no celular.</span></div><div><b>03</b><span><strong>Rotina completa</strong>Almoço e jantar contemplados.</span></div></div><p class="confidential">🔒 As opções e páginas internas são liberadas somente após a compra.</p></div></section>
 
-  <section class="faq shell section"><div><div class="section-kicker">DÚVIDAS RÁPIDAS</div><h2>Antes de<br><em>começar.</em></h2></div><div class="questions"><details open><summary>Como recebo os materiais?</summary><p>Após a confirmação do pagamento, você recebe acesso digital ao cardápio e ao bônus.</p></details><details><summary>O bônus está incluso no preço?</summary><p>Sim. Nesta oferta, o guia “15 Jantares em 15 Minutos” vai incluído sem custo adicional.</p></details><details><summary>Preciso seguir a ordem dos dias?</summary><p>Não. Você pode adaptar o planejamento à rotina e às preferências da sua casa.</p></details><details><summary>É uma assinatura?</summary><p>Não. O pagamento é feito uma única vez.</p></details></div></section>
+  <section class="faq shell section"><div><div class="section-kicker">DÚVIDAS RÁPIDAS</div><h2>Antes de<br><em>começar.</em></h2></div><div class="questions"><details open=""><summary>Como recebo os materiais?</summary><p>Após a confirmação do pagamento, você recebe acesso digital ao cardápio e ao bônus.</p></details><details><summary>O bônus está incluso no preço?</summary><p>Sim. Nesta oferta, o guia “15 Jantares em 15 Minutos” vai incluído sem custo adicional.</p></details><details><summary>Preciso seguir a ordem dos dias?</summary><p>Não. Você pode adaptar o planejamento à rotina e às preferências da sua casa.</p></details><details><summary>É uma assinatura?</summary><p>Não. O pagamento é feito uma única vez.</p></details></div></section>
 
   <section class="final-cta"><div class="shell final-grid"><div><span class="last-badge">OFERTA ESPECIAL</span><h2>45 refeições planejadas por menos de <em>R$ 1 por ideia.</em></h2><p>Garanta o cardápio de 30 dias e receba o bônus com 15 jantares rápidos.</p></div><div class="buy-box"><span>COMBO COMPLETO</span><div class="old-price">de R$ 49,90 por</div><div class="buy-price">R$ 19,90</div><div class="bonus-included">+ BÔNUS INCLUÍDO HOJE</div><a class="cta" href="https://pay.kiwify.com.br/rlN2zSh" target="" rel="noreferrer">QUERO FACILITAR MINHA ROTINA <b>→</b></a><small>Compra segura • Acesso digital imediato</small></div></div></section>
 
@@ -130,5 +136,5 @@ src="https://www.facebook.com/tr?id=1559883709101573&ev=PageView&noscript=1"
     <span class="floating-buy-cta-arrow" aria-hidden="true">→</span>
   </a>
 
-</body>
-</html>
+
+</body><div id="codex-agent-overlay-root" data-codex-agent-overlay-root="true"></div></html>
