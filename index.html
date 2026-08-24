@@ -7,6 +7,40 @@
   <meta name="theme-color" content="#e3261b">
   <title>30 Dias Sem Repetir o Almoço + Bônus Especial</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .floating-buy-cta{
+      position:fixed;right:24px;bottom:24px;z-index:9999;
+      display:flex;align-items:center;justify-content:center;gap:11px;
+      padding:13px 18px;border:2px solid #111;border-radius:999px;
+      background:linear-gradient(135deg,#ffd51c 0%,#ffb000 100%);
+      color:#111;text-decoration:none;text-transform:uppercase;
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      box-shadow:0 7px 0 #111,0 16px 35px rgba(0,0,0,.28);
+      transition:transform .2s ease,box-shadow .2s ease;
+    }
+    .floating-buy-cta:hover{transform:translateY(-2px);box-shadow:0 9px 0 #111,0 18px 38px rgba(0,0,0,.3)}
+    .floating-buy-cta-icon{font-size:24px;line-height:1}
+    .floating-buy-cta-copy{display:flex;flex-direction:column;line-height:1.05}
+    .floating-buy-cta-copy small{font-size:10px;font-weight:800;letter-spacing:.08em}
+    .floating-buy-cta-copy strong{margin-top:3px;font-size:14px;font-weight:950}
+    .floating-buy-cta-arrow{font-size:21px;font-weight:950}
+    @media (max-width:720px){
+      body{padding-bottom:calc(88px + env(safe-area-inset-bottom))}
+      .floating-buy-cta{
+        left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));
+        min-height:58px;padding:9px 14px;border-radius:16px;
+        box-shadow:0 6px 0 #111,0 13px 28px rgba(0,0,0,.32);
+      }
+      .floating-buy-cta-icon{font-size:25px}
+      .floating-buy-cta-copy small{font-size:10px}
+      .floating-buy-cta-copy strong{font-size:14px}
+    }
+    @media (prefers-reduced-motion:reduce){
+      .floating-buy-cta{transition:none}
+    }
+  </style>
+
 </head>
 <body>
   <!-- Meta Pixel Code -->
@@ -89,5 +123,12 @@ src="https://www.facebook.com/tr?id=1559883709101573&ev=PageView&noscript=1"
 
   <footer><div class="shell"><b>30 DIAS SEM REPETIR O ALMOÇO</b><span>Produto digital • © 2026</span></div></footer>
 </main>
+
+  <a class="floating-buy-cta" href="https://pay.kiwify.com.br/LeiF3oF" target="_self" rel="noreferrer" aria-label="Comprar o combo completo por R$ 19,90">
+    <span class="floating-buy-cta-icon" aria-hidden="true">🛒</span>
+    <span class="floating-buy-cta-copy"><small>OFERTA DE HOJE</small><strong>QUERO O COMBO • R$ 19,90</strong></span>
+    <span class="floating-buy-cta-arrow" aria-hidden="true">→</span>
+  </a>
+
 </body>
 </html>
